@@ -54,6 +54,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Ghoul.cs" />
+    <Compile Include="Maze.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Pacman.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
