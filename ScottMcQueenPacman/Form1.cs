@@ -16,6 +16,8 @@ namespace ScottMcQueenPacman
         private const int FORMWIDTH = 600;
 
         private Maze maze;
+        private Random random;
+        private Controller controller;
     
         public Form1()
         {
@@ -26,6 +28,7 @@ namespace ScottMcQueenPacman
             Height = FORMHEIGHT;
             Width = FORMWIDTH;
 
+            controller = new Controller(maze, random);
             // create a Bitmap object for each image you want to display
             Bitmap k = new Bitmap("kibble.bmp");
             Bitmap w = new Bitmap("wall.bmp");
@@ -39,6 +42,7 @@ namespace ScottMcQueenPacman
 
             // remember the Timer Enabled Property is set to false as a default
             timer1.Enabled = true;
+            controller.Play();
 
             
         }

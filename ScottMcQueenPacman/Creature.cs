@@ -23,15 +23,15 @@ namespace ScottMcQueenPacman
             this.maze = maze;
             this.position = position;
         }
-        public DataGridViewCell GetMazeCellForPosition(Point p)
+       /* public DataGridViewCell GetMazeCellForPosition(Point p)
         {
             return maze.Rows[p.Y].Cells[p.X];
-        }
+        }*/
         public virtual void draw()
         {
-            GetMazeCellForPosition(position).Value = image1;
-            Thread.Sleep(100);
-            GetMazeCellForPosition(position).Value = image2;
+           // GetMazeCellForPosition(position).Value = image1;
+           // Thread.Sleep(100);
+           // GetMazeCellForPosition(position).Value = image2;
         }
     }
 }

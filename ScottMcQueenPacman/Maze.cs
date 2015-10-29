@@ -36,10 +36,6 @@ namespace ScottMcQueenPacman
                                         "wkkkkkkkkkkkkkkkkkkw" +
                                         "wwwwwwwwwwwwwwwwwwww";
      
-	
-		 
-	
-       
         //fields
         private string map;
         private int nKibbles;
