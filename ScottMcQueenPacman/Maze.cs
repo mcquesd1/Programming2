@@ -15,7 +15,7 @@ namespace ScottMcQueenPacman
         private const int SPACESIZE = 4;
         private const int NKIBBLES = 12;
 
-        private const string INITMAP = "wwwwwwwwwwwwwwwwwwww" +
+        private const string INITMAP =  "wwwwwwwwwwwwwwwwwwww" +
                                         "wkkkkkkkkkkkkkkkkkkw" +
                                         "wkwwwwkwwwkwwwkwwwkw" +
                                         "wkkkkwkwwwkwwwkkkkkw" +
@@ -35,7 +35,11 @@ namespace ScottMcQueenPacman
                                         "wkwwwwkwwkwkwwwkwwkw" +
                                         "wkkkkkkkkkkkkkkkkkkw" +
                                         "wwwwwwwwwwwwwwwwwwww";
-
+     
+	
+		 
+	
+       
         //fields
         private string map;
         private int nKibbles;
