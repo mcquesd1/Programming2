@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ScottMcQueenPacman
 {
-    class Direction
+    public enum Direction : byte
     {
+        Up = 1,
+        Down = 2,
+        Left = 3,
+        Right = 4,
     }
 }
