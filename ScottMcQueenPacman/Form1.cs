@@ -42,6 +42,7 @@ namespace ScottMcQueenPacman
 
             // remember the Timer Enabled Property is set to false as a default
             timer1.Enabled = true;
+            maze.Draw();
             controller.Play();
 
             
