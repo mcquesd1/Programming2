@@ -11,30 +11,27 @@ namespace ScottMcQueenPacman
 {
     public abstract class Creature
     {
-        private const int PACXSTART = 10;
-        private const int PACYSTART =13;
-
         protected Maze maze;
         protected Bitmap image1;
         protected Bitmap image2;
         protected Point position;
 
-        public Creature(String fileName1,String fileName2,Maze maze)
+        public Creature(String fileName1, String fileName2, Maze maze, Point position)
         {
             image1 = new Bitmap(fileName1);
             image2 = new Bitmap(fileName2);
             this.maze = maze;
-            position = new Point(PACXSTART,PACYSTART) ;
+            this.position = position;
         }
-       public DataGridViewCell GetMazeCellForPosition(Point p)
+        public DataGridViewCell GetMazeCellForPosition(Point p)
+         {
+             return maze.Rows[p.Y].Cells[p.X];
+         }
+        public virtual void Draw()
         {
-            return maze.Rows[p.Y].Cells[p.X];
-        }
-        public virtual void draw()
-        {
-           GetMazeCellForPosition(position).Value = image1;
-           Thread.Sleep(100);
-           GetMazeCellForPosition(position).Value = image2;
+             GetMazeCellForPosition(position).Value = image1;
+             Thread.Sleep(100);
+            GetMazeCellForPosition(position).Value = image2;
         }
     }
 }

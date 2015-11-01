@@ -11,8 +11,8 @@ namespace ScottMcQueenPacman
     {
         private Direction direction;
 
-        public Pacman(String fileName1, String fileName2, Maze maze)
-        :base(fileName1,fileName2,maze)
+        public Pacman(String fileName1, String fileName2, Maze maze, Point position)
+            : base(fileName1, fileName2, maze, position)
         {
             direction = Direction.Right;
         }

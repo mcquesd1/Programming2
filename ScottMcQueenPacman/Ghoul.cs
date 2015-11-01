@@ -10,10 +10,10 @@ namespace ScottMcQueenPacman
     public class Ghoul : Creature
     {
 
-        public Ghoul(String fileName1, String fileName2, Maze maze)
-        :base(fileName1,fileName2,maze)
-        { 
-        
+        public Ghoul(String fileName1, String fileName2, Maze maze, Point position)
+            : base(fileName1, fileName2, maze, position)
+        {
+
         }
     }
 }
