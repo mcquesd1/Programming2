@@ -11,7 +11,7 @@ namespace ScottMcQueenPacman
     public class Controller
     {
         private const int PACSTARTX = 10;
-        private const int PACSTARTY = 13;
+        private const int PACSTARTY = 12;
         private const int GHOULSTARTX = 10;
         private const int GHOULSTARTY = 10;
         
@@ -33,11 +33,13 @@ namespace ScottMcQueenPacman
         }
         public void Play()
         {
+            maze.Draw();
             pacman.Draw();
+            pacman.Move();
         }
-        public void SetPacmanDirection()
-        { 
-        
+        public void SetPacmanDirection(Direction direction)
+        {
+            pacman.Direction = direction;
         }
         public void PacmanHitsGhoul()
         { 

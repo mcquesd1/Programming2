@@ -23,7 +23,7 @@ namespace ScottMcQueenPacman
                                         "wkkkkwkwwwkwwwkwwwkw" +
                                         "wkwwwwkwwwkwwwkkkkkw" +
                                         "wkkkkkkkkkkkkkkwkwkw" +
-                                        "wkwkwwwwwwkwwwwwkkkw" +
+                                        "wkwkwwwwwkkkwwwwkkkw" +
                                         "wkkkkkkkwkkkwkkkkwkw" +
                                         "wkwwwwwkwkkkwkwwwwkw" +
                                         "wkkkkwwkwwwwwkwwwwkw" +

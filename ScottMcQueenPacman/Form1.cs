@@ -28,7 +28,7 @@ namespace ScottMcQueenPacman
             Height = FORMHEIGHT;
             Width = FORMWIDTH;
 
-            controller = new Controller(maze, random);
+            random = new Random();
             // create a Bitmap object for each image you want to display
             Bitmap k = new Bitmap("kibble.bmp");
             Bitmap w = new Bitmap("wall.bmp");
@@ -39,23 +39,48 @@ namespace ScottMcQueenPacman
 
             // important, need to add the maze object to the list of controls on the form
             Controls.Add(maze);
-
+            controller = new Controller(maze, random);
             // remember the Timer Enabled Property is set to false as a default
             timer1.Enabled = true;
             
-            controller.Play();
+            
 
             
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            maze.Draw();
+            
+            controller.Play();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Enabled = !timer1.Enabled;
+        }
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                    controller.SetPacmanDirection(Direction.Left);
+                    break;
+
+                case Keys.Right:
+                    controller.SetPacmanDirection(Direction.Right);
+                    break;
+
+                case Keys.Up:
+                    controller.SetPacmanDirection(Direction.Up);
+                    break;
+
+                case Keys.Down:
+                    controller.SetPacmanDirection(Direction.Down);
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

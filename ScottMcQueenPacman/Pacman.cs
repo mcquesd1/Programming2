@@ -36,5 +36,10 @@ namespace ScottMcQueenPacman
                     break;
             }
         }
+        public Direction Direction
+        {
+            get { return direction; }
+            set { direction = value; }
+        }
     }
 }
