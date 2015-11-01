@@ -31,10 +31,10 @@ namespace ScottMcQueenPacman
         {
              GetMazeCellForPosition(position).Value = image1;
              Application.DoEvents();
-             Thread.Sleep(100);
+            
             GetMazeCellForPosition(position).Value = image2;
               Application.DoEvents();
-              Thread.Sleep(100);
+              
         }
         public Point Position
         {
